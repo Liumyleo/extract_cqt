@@ -34,5 +34,6 @@ def essentia_cqt(in_path):
     return new_cqt.astype(np.float32)
 
 if __name__=='__main__':
-    cqt = essentia_cqt("./002N-hprwiw.mp4")
-    print(cqt.shape)
+    pathIn = "./testcase/84_42.wav"
+    cqt = essentia_cqt(pathIn)
+    print(f"{cqt.shape=}")
